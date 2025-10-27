@@ -12,10 +12,11 @@ import 'package:prim_derma_app/pages/widget_tree/start_page.dart';
 import 'package:prim_derma_app/repo/derma_repo.dart';
 import 'package:prim_derma_app/repo/info_repo.dart';
 import 'package:prim_derma_app/repo/user_repo.dart';
+import 'package:upgrader/upgrader.dart';
 
 void main() async {
-  //User? user = await UserRepo().userLogin('mx@prim.my','abc123');
   WidgetsFlutterBinding.ensureInitialized();
+
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   FirebaseMessaging _firebaseMessaging = FirebaseMessaging.instance;
@@ -62,7 +63,12 @@ class MyApp extends StatelessWidget {
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             useMaterial3: true,
           ),
-          home: home),
+          home: UpgradeAlert(
+              showIgnore: false,
+              showLater: false,
+              showReleaseNotes: false,
+              upgrader: Upgrader(minAppVersion: '1.0.2'),
+              child: home)),
     );
   }
 }

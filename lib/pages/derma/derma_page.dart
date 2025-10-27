@@ -218,6 +218,7 @@ class _DermaPageState extends State<DermaPage> {
                         }),
                   )),
             ],
+        
           ),
         ),
       ),
