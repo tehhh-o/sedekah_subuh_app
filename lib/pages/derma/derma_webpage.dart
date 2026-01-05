@@ -33,14 +33,14 @@ class _DonateWebViewState extends State<DonateWebView> {
       return true;
     }
 
-    if (url.contains('directpayIndex')) {
+    if (url.contains('directpayIndex') ||  url.contains('directpay.my/pay')) {
       listenReceipt = true;
       setState(() {});
     } else if (url.contains('/derma')) {
       Navigator.of(context).pop();
       return false;
     }
-    return url.contains('directpayIndex') || url.contains('sumbangan');
+    return url.contains('directpayIndex') || url.contains('sumbangan') || url.contains('directpay.my/pay');
   }
 
   bool listenReceiptUrl(String url) {
