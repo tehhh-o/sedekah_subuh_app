@@ -79,8 +79,14 @@ class _LoginPageState extends State<LoginPage> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
-                          Image.asset('lib/assets/logo.png',width: 200,height: 200,),
-                          SizedBox(height: 30,),
+                          Image.asset(
+                            'lib/assets/sedekahsubuh_logo.png',
+                            width: 200,
+                            height: 200,
+                          ),
+                          SizedBox(
+                            height: 30,
+                          ),
                           TextFormField(
                             controller: _emailController,
                             decoration: InputDecoration(
