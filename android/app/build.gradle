@@ -58,7 +58,7 @@ android {
         release {
             keyAlias 'upload'
             keyPassword 'UTeMku@Cemerlang2022'
-            storeFile file('D:\\CMX FILE\\utem_degree\\year2sem2\\prim_derma_app\\prim_derma_app\\upload-keystore.jks')
+            storeFile file('..\\..\\upload-keystore.jks')
             storePassword 'UTeMku@Cemerlang2022'
         }
     }
