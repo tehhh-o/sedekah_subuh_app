@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 LinearGradient PrimPrimaryGradient() {
   return LinearGradient(
-      colors: [Colors.deepPurple[100]!, Colors.deepPurple[50]!],
+      colors: [Colors.indigo[100]!, Colors.indigo[50]!],
       begin: Alignment.topLeft,
       end: Alignment.bottomRight);
 }
@@ -51,7 +51,6 @@ class PrimButton extends StatelessWidget {
   }
 }
 
-
 PreferredSizeWidget PrimAppBar(String title) {
   return AppBar(
     title: Text(
@@ -68,7 +67,7 @@ PreferredSizeWidget PrimAppBar(String title) {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           //colors: [Colors.blueGrey[800]!, Colors.blueGrey[600]!],
-          colors: [Colors.deepPurpleAccent[200]!, Colors.deepPurpleAccent[100]!],
+          colors: [Colors.indigo[600]!, Colors.indigo[400]!],
 
           begin: Alignment.topCenter,
           end: Alignment.bottomRight,
@@ -89,9 +88,9 @@ PreferredSizeWidget PrimAppBar(String title) {
 
 final Color PRIMARY_GREY = Colors.blueGrey[300]!;
 
-final Color PRIMARY_PURPLE = Colors.deepPurpleAccent[200]!;
+final Color PRIMARY_PURPLE = Colors.indigo[600]!;
 
-final Color HIGHLIGHT_TEXT_COLOR = Colors.deepPurple[400]!;
+final Color HIGHLIGHT_TEXT_COLOR = Colors.indigo[900]!;
 final Color SECONDARY_TEXT_COLOR = Colors.blueGrey[800]!;
 final Color SECONDARY_TEAL = Color(0xff116682);
 final Color SECONDARY_GREEN = Colors.green[300]!;
