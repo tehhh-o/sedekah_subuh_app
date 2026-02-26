@@ -67,7 +67,7 @@ class MyApp extends StatelessWidget {
               showIgnore: false,
               showLater: false,
               showReleaseNotes: false,
-              upgrader: Upgrader(minAppVersion: '1.0.2'),
+              upgrader: Upgrader(),
               child: home)),
     );
   }

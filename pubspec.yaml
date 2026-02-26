@@ -45,7 +45,7 @@ dependencies:
   firebase_messaging: ^14.7.10
   url_launcher: ^6.3.0
   in_app_update: ^4.2.3
-  upgrader: ^10.3.0
+  upgrader: ^12.5.0
 
 dev_dependencies:
   flutter_test:
